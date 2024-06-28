@@ -1,0 +1,125 @@
+# model.h
+!main.cpp graphics.h keys_n_colors.h malloc.h model.h #<#>
+!model.cpp graphics.h keys_n_colors.h malloc.h model.h #<#>
+!model.h graphics.h keys_n_colors.h malloc.h #<#>
+!scena_game.cpp graphics.h keys_n_colors.h malloc.h model.h #<#>
+!scena_menu.cpp graphics.h keys_n_colors.h malloc.h model.h #<#>
+ struct@Asix _type_ #<model.h>
+ struct@Button _type_ #<model.h>
+ struct@Game _type_ #<model.h>
+ struct@Ring _type_ #<model.h>
+ struct@Section _type_ #<model.h>
+Asix _type_ #<model.h>
+Button _type_ #<model.h>
+COUNT_ASIX #<model.h>
+Game _type_ #<model.h>
+Ring _type_ #<model.h>
+Section _type_ #<model.h>
+__initAsix(Asix& asix, int w, int h) -> void #<scena_game.cpp>
+backStep() -> int #<model.h>
+calcCoordAsix() -> void #<scena_game.cpp>
+calcCoordRings(Asix& asix) -> void #<scena_game.cpp>
+colors : long[] #<scena_game.cpp>
+countSections : int #<scena_menu.cpp>
+createMainWindow() -> int #<main.cpp>
+ctrl_buttons : Button[] #<scena_game.cpp>
+ctrl_counts : int #<scena_game.cpp>
+game : Game #<model.h>
+game_onLeftBtnClick(int x, int y) -> void #<scena_game.cpp>
+game_onLeftBtnUp(int x, int y) -> void #<scena_game.cpp>
+game_onMouseMove(int x, int y) -> void #<scena_game.cpp>
+game_stage : enum #<model.h>
+getAsixByCoord(int x, int y) -> Asix* #<scena_game.cpp>
+getButtonByCoord(Section* s, int x, int y) -> Button* #<scena_menu.cpp>
+getCtrlButtonByCoord(int x, int y) -> Button* #<scena_game.cpp>
+getRingByCoord(Asix* asix, int x, int y) -> int #<scena_game.cpp>
+getSectionByCoord(int x, int y) -> Section* #<scena_menu.cpp>
+initCtrlButtons() -> void #<scena_game.cpp>
+initFirstMenu() -> void #<scena_menu.cpp>
+initGame() -> int #<model.h>
+initSection(Section* s) -> void #<scena_menu.cpp>
+initSettings() -> void #<scena_menu.cpp>
+main() -> int #<main.cpp>
+move(Asix* asix1, Asix* asix2) -> int #<model.h>
+section_type : enum #<model.h>
+sets_onLeftBtnClick(int x, int y) -> void #<scena_menu.cpp>
+settings : Section[] #<scena_menu.cpp>
+showAbout() -> void #<main.cpp>
+showAsixes() -> void #<scena_game.cpp>
+showButton(Section* s, Button* r) -> void #<scena_menu.cpp>
+showComentSection(Section* s) -> void #<scena_menu.cpp>
+showCounter() -> void #<scena_game.cpp>
+showCtrlButtons() -> void #<scena_game.cpp>
+showFirstMenu() -> int #<model.h>
+showGame() -> void #<model.h>
+showRing(Ring* r) -> void #<scena_game.cpp>
+showRings(Asix& asix) -> void #<scena_game.cpp>
+showScena() -> int #<main.cpp>
+showSection(Section* s) -> void #<scena_menu.cpp>
+showSettings() -> int #<model.h>
+showStage() -> void #<scena_game.cpp>
+startGame() -> int #<model.h>
+str : char[][] #<scena_menu.cpp>
+testGameOver() -> int #<model.h>
+testMove(Asix* asix1, Asix* asix2) -> int #<model.h>
+types_button : enum #<model.h>
+types_ring : enum #<model.h>
+types_scena : enum #<model.h>
+verifiAllData() -> int #<scena_menu.cpp>
+	Asix::number : int #<model.h>
+	Asix::heightRing : int #<model.h>
+	Asix::countRings : int #<model.h>
+	Asix::color : long #<model.h>
+	Asix::x : int #<model.h>
+	Asix::y : int #<model.h>
+	Asix::x2 : int #<model.h>
+	Asix::y2 : int #<model.h>
+	Asix::areaX : int #<model.h>
+	Asix::areaY : int #<model.h>
+	Asix::areaX2 : int #<model.h>
+	Asix::areaY2 : int #<model.h>
+	Asix::image : void* #<model.h>
+	Asix::rings : Ring[] #<model.h>
+	Button::type : types_button #<model.h>
+	Button::str : const char* #<model.h>
+	Button::data : int #<model.h>
+	Button::color : long #<model.h>
+	Button::isActive : int #<model.h>
+	Button::x : int #<model.h>
+	Button::y : int #<model.h>
+	Button::x2 : int #<model.h>
+	Button::y2 : int #<model.h>
+	Game::stage : game_stage #<model.h>
+	Game::typeScena : types_scena #<model.h>
+	Game::typeRing : types_ring #<model.h>
+	Game::isMouseMove : int #<model.h>
+	Game::ringForMove : Ring* #<model.h>
+	Game::asixForMove : Asix* #<model.h>
+	Game::lastAsix : int #<model.h>
+	Game::currentAsix : int #<model.h>
+	Game::lastX : int #<model.h>
+	Game::lastY : int #<model.h>
+	Game::maxY : int #<model.h>
+	Game::maxX : int #<model.h>
+	Game::countAxis : int #<model.h>
+	Game::countRings : int #<model.h>
+	Game::counts : int #<model.h>
+	Game::asix : Asix[] #<model.h>
+	Ring::size : int #<model.h>
+	Ring::x : int #<model.h>
+	Ring::y : int #<model.h>
+	Ring::x2 : int #<model.h>
+	Ring::y2 : int #<model.h>
+	Ring::color : long #<model.h>
+	Section::type : section_type #<model.h>
+	Section::name : const char* #<model.h>
+	Section::num : int #<model.h>
+	Section::color : int #<model.h>
+	Section::countButtons : int #<model.h>
+	Section::data : int #<model.h>
+	Section::height : int #<model.h>
+	Section::buttons : Button[] #<model.h>
+	Section::isFinish : int #<model.h>
+	Section::x : int #<model.h>
+	Section::y : int #<model.h>
+	Section::x2 : int #<model.h>
